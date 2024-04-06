@@ -7,6 +7,29 @@ import meter3 from "../assests/imgs/meter3.svg";
 import colorSharp from "../assests/imgs/color-sharp.png";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
+import Html from "../assests/imgs/html.png";
+import Css from "../assests/imgs/css.png";
+import JS from "../assests/imgs/js.png";
+import Tailwind from "../assests/imgs/tailwind.png";
+import Redux from "../assests/imgs/redux.png";
+import React from "../assests/imgs/react.png";
+import Next from "../assests/imgs/next.png";
+import Framer from "../assests/imgs/framer.png";
+import Typescript from "../assests/imgs/ts.png";
+import MaterialUi from "../assests/imgs/mui.png";
+const skills = [
+  { id: 1, Image: Html, title: "HTML5" },
+  { id: 2, Image: Css, title: "Css3" },
+  { id: 3, Image: JS, title: "Javascript" },
+  { id: 4, Image: Tailwind, title: "TailwindCss" },
+  { id: 5, Image: Redux, title: "Redux" },
+  { id: 6, Image: React, title: "React.js" },
+  { id: 7, Image: Next, title: "Next.js" },
+  { id: 8, Image: Framer, title: "Framer-motion" },
+  { id: 9, Image: Typescript, title: "Typescript" },
+  { id: 10, Image: Framer, title: "Framer-motion" },
+  { id: 11, Image: MaterialUi, title: "Material ui" },
+];
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
@@ -48,12 +71,27 @@ export const Skills = () => {
                   </div>
                 )}
               </TrackVisibility>
-              <Carousel
-                responsive={responsive}
-                infinite={true}
-                className="skill-slider"
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
               >
-                <div className="item">
+                <Carousel
+                  responsive={responsive}
+                  infinite={true}
+                  className="skill-slider"
+                >
+                  {skills.map((skill) => {
+                    return (
+                      <div key={skill.id} className="item">
+                        <img src={skill.Image} alt={skill.title} />
+                        <h5>{skill.title}</h5>
+                      </div>
+                    );
+                  })}
+                  {/* <div className="item">
                   <img src={meter1} alt="img" />
                   <h5>Web Development</h5>
                 </div>
@@ -68,8 +106,9 @@ export const Skills = () => {
                 <div className="item">
                   <img src={meter1} alt="img" />
                   <h5>Algorithm</h5>
-                </div>
-              </Carousel>
+                </div> */}
+                </Carousel>
+              </div>
             </div>
           </Col>
         </Row>

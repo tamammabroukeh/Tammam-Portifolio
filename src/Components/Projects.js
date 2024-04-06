@@ -40,6 +40,7 @@ export const Projects = () => {
       imgUrl: projImg10,
     },
   ];
+  
   const projectsSecond = [
     {
       title: "Hangman Game",
