@@ -13,6 +13,11 @@ import projImg9 from "../assests/imgs/Special.PNG";
 import projImg10 from "../assests/imgs/tamam.PNG";
 import projImg11 from "../assests/imgs/XO.PNG";
 import projImg12 from "../assests/imgs/Mtn.PNG";
+import projImg13 from "../assests/imgs/SnapUp.PNG";
+import projImg14 from "../assests/imgs/Crypto.PNG";
+import projImg15 from "../assests/imgs/Portifolio.PNG";
+import projImg16 from "../assests/imgs/Dashboard.PNG";
+
 import Nav from "react-bootstrap/Nav";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
@@ -20,70 +25,111 @@ import "animate.css";
 export const Projects = () => {
   const projectsFirst = [
     {
-      title: "Travel The World",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Ecommerce project",
+      description: `An online store that contains many pages such as the
+      products page and the search page in addition to the shopping cart`,
+      imgUrl: projImg13,
+      Url: "https://tamammabroukeh.github.io/Snap-Up/",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Cryptoverse currencies project",
+      description: `Cryptocurrency website that contains an explanation of
+      digital currencies, in addition to the currency search feature`,
+      imgUrl: projImg14,
+      Url: "https://tamammabroukeh.github.io/cryptoverse-currencies/",
     },
     {
-      title: "Boost Your Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Prtifolio project",
+      description: `A personal website that contains works, projects, and
+      ways to communicate with the owner of the site using`,
+      imgUrl: projImg15,
+      Url: "https://androw-portifolio.netlify.app/",
     },
     {
-      title: "Special Design",
-      description: "Design & Development",
-      imgUrl: projImg10,
+      title: "Dashboard Design",
+      description:
+        "A simple dashboard to show some information like orders, sales, customers, products,...",
+      imgUrl: projImg16,
+      Url: "https://tamammabroukeh.github.io/Dashboard/",
     },
   ];
-  
+  // const projectsFirst = [
+  //   {
+  //     title: "Travel The World",
+  //     description: "Design & Development",
+  //     imgUrl: projImg1,
+  //   },
+  //   {
+  //     title: "Business Startup",
+  //     description: "Design & Development",
+  //     imgUrl: projImg2,
+  //   },
+  //   {
+  //     title: "Boost Your Startup",
+  //     description: "Design & Development",
+  //     imgUrl: projImg3,
+  //   },
+  //   {
+  //     title: "Special Design",
+  //     description: "Design & Development",
+  //     imgUrl: projImg10,
+  //   },
+  // ];
+
   const projectsSecond = [
     {
       title: "Hangman Game",
-      description: "Design & Development",
+      description:
+        "A simple game whose goal is to search for a word within a group of letters",
       imgUrl: projImg5,
+      Url: "https://tamammabroukeh.github.io/Hangman-game/",
     },
     {
       title: "Memory Game",
-      description: "Design & Development",
+      description: "A simple game whose goal is to find two similar pictures",
       imgUrl: projImg8,
+      Url: "https://tamammabroukeh.github.io/Memory-Game/",
     },
     {
       title: "XO Game",
-      description: "Design & Development",
+      description: "XO game that needs no introduction",
       imgUrl: projImg11,
+      Url: "https://tamammabroukeh.github.io/XO-Game/",
     },
     {
       title: "Leon",
-      description: "Design & Development",
+      description: "Simple landing page to display company information",
       imgUrl: projImg7,
+      Url: "https://tamammabroukeh.github.io/Leon/",
     },
   ];
 
   const projectsThird = [
     {
       title: "Kasper",
-      description: "Design & Development",
+      description:
+        "Portfolio to display team information and details of its work and projects",
       imgUrl: projImg6,
     },
     {
-      title: "Portifolio",
-      description: "Design & Development",
+      title: "Portfolio Company",
+      description:
+        "Portfolio to display company information and details of its work and projects",
       imgUrl: projImg9,
+      Url: "https://tamammabroukeh.github.io/Special-Design/",
     },
     {
       title: "Bondi",
-      description: "Design & Development",
+      description:
+        "Portfolio to display company information and details of its work and projects",
       imgUrl: projImg4,
+      Url: "https://tamammabroukeh.github.io/Bondi/",
     },
     {
       title: "Mtn Company",
-      description: "Design & Development",
+      description: "A website similar to the MTN website",
       imgUrl: projImg12,
+      Url: "https://tamammabroukeh.github.io/Mtn/",
     },
   ];
 

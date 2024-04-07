@@ -7,6 +7,10 @@ import newLogo from "../assests/imgs/NewMyLogo.png";
 import navIcon1 from "../assests/imgs/nav-icon1.svg";
 import navIcon2 from "../assests/imgs/nav-icon2.svg";
 import navIcon3 from "../assests/imgs/nav-icon3.svg";
+import github from "../assests/imgs/iconmonstr-github-1.svg";
+import Linkedin from "../assests/imgs/icons8-linkedin-50.png";
+import Telegram from "../assests/imgs/icons8-telegram-50.png";
+
 function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrooled] = useState(false);
@@ -65,18 +69,20 @@ function NavBar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="">
-                <img src={navIcon1} alt="" />
+              <a href="https://github.com/tamammabroukeh">
+                <img src={github} alt="" />
               </a>
-              <a href="">
-                <img src={navIcon2} alt="" />
+              <a href="https://www.linkedin.com/in/tamam-mabrouka-a0aa37224">
+                <img src={Linkedin} alt="" />
               </a>
-              <a href="">
-                <img src={navIcon3} alt="" />
+              <a href="https://t.me/TamamMabrouka">
+                <img src={Telegram} alt="" />
               </a>
             </div>
-            <button className="vvd" onClick={console.log("connect")}>
+            <button className="vvd">
+              <a href='mailto:tamammb367@gmail.com'>
               <span>Let`s Connect</span>
+                </a>
             </button>
           </span>
         </Navbar.Collapse>
